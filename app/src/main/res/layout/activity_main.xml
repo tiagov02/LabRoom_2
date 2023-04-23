@@ -47,5 +47,22 @@ So, we are leaving the template code in. -->
         android:contentDescription="@string/add_word"
         android:src="@drawable/ic_add_black_24dp"/>
 
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Button"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="691dp" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Button"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="691dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
