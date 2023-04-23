@@ -19,6 +19,7 @@ package com.example.android.roomwordssample
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -74,5 +75,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.LENGTH_LONG
             ).show()
         }
+    }
+
+    fun onClickDelete(view: View) {
+        wordViewModel.delete()
     }
 }

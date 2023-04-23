@@ -17,6 +17,7 @@
 package com.example.android.roomwordssample
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
@@ -47,4 +48,7 @@ interface WordDao {
 
     @Query("SELECT * from word_table where word like'p%'")
     fun getWordThatBeginInP(): Flow<List<Word>>
+
+    @Query("delete from word_table where category='lapis'")
+    fun delWord()
 }

@@ -41,4 +41,8 @@ class WordRepository(private val wordDao: WordDao) {
     suspend fun getWordsBegginingP(){
         wordDao.getWordThatBeginInP()
     }
+
+    fun deleteWord(){
+        wordDao.delWord()
+    }
 }
